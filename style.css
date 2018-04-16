@@ -1,0 +1,242 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    }
+    .header {
+      padding: 10px;
+      text-align: center;
+      background-image: url(https://coverfiles.alphacoders.com/406/40665.jpg);
+      color: white;
+      text-shadow: 2px 2px green;
+  }
+  
+  
+    
+/* Style tab links */
+.tablink {
+    background-color: #55555570;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    
+}
+
+#Books {
+   background-image: url(http://www.gilanifoundation.com/wp-content/uploads/2015/04/271-1024x640.jpg);
+   text-shadow: 1px 1px green;
+  
+
+}
+#Movies {
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/movie-theater-film-reel-background-in-seamless-loop_xk6ivnb9__F0000.png);
+  text-shadow: 2px 2px green;
+
+}
+
+
+#Itunes {
+  background-image: url(https://www.walldevil.com/wallpapers/a71/speaker-colorful-wallpaper-speakers-melting-wallpapers.jpg);
+  text-shadow: 2px 2px green;
+  
+}
+#Contact {
+  background-image: url(https://starkaerospace.com/wp-content/uploads/2014/06/background-world-map-1.gif);
+  
+}
+
+
+/* Books API Styling */
+.brand {
+	vertical-align:middle;
+	height:50px;
+	margin-top:30px;
+	color:white;
+}
+
+.logo {
+	width:50px;
+	height:100%;
+}
+
+.row {
+	margin-top:50px;
+}
+
+
+#results {
+    margin-left:64px;
+    margin-top: 10px;
+    border:3px solid #EEE;
+    text-align:center;
+    padding:20px 7px;
+    border-radius:5px;
+    font-family: 'Prociono', serif;
+    width: 88%;
+    color: #222;
+    display: none;
+    background-image: url(http://quickbookstutorialvideos.com/wp-content/uploads/2014/05/369765fd0690ab4349767175_640.jpg); 
+}
+#results h3 {
+	font-size: 19px;
+        width: 95%;
+}
+input {
+    padding: 11px;
+    margin-left: 19px;
+    border-radius: 8px;
+   
+}
+
+
+#button {
+    color: #31302B;
+    background: #FFF;
+    padding: 12px 17px;
+    margin-left:35px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #31302B;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 0 #31302B;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+#button:hover {
+    box-shadow: inset 0 100px 0 0 red;
+    color: #FFF;
+}
+hr { background-color:#333 }
+@media screen and (max-width: 766px) {
+    #results{
+            margin-left: 30px
+    }
+    .col-sm-2 {
+        margin-left: 28%
+
+    }
+
+}
+
+/*Itunes API styling*/
+#output div {
+  display: inline-block;
+  border: solid 1px #CCC;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  vertical-align: top;
+}
+#output img {
+  width: 200px;
+}
+
+/* Contact Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  color: black;
+  border-radius: 5px;
+  background-image: url(https://starkaerospace.com/wp-content/uploads/2014/06/background-world-map-1.gif);
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+/* Movies search styling */
+#search-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+ 
+  }
+
+  /* avatar */
+
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
